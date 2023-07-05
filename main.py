@@ -448,8 +448,9 @@ while True:
                     driver = start_browser()
                 search_youtube(search_term)
                 continue
-            elif "queue song" or "add song" in command_lower:
+            elif "add song" in command_lower:
                 add_song_to_queue_spotify()
+                continue
             elif 'search song' in command_lower:
                 search_spotify()
                 continue
@@ -512,5 +513,3 @@ while True:
                 break
             elif command is None:
                 continue
-    else:
-        continue
